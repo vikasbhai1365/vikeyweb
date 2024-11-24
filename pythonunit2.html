@@ -39,7 +39,8 @@
         .ans {
             border: 15px solid rgb(218, 22, 156);
             font-weight: bold;
-            background-color: rgba(26, 9, 9, 0.849);
+            /* background-color: rgba(26, 9, 9, 0.849); */
+            background-color: #1f1f1f;
             padding: 10px;
             margin: 10px;
             margin-right: 50px;
@@ -479,16 +480,18 @@ print("Net Salary    : %.2f"%net_salary)
 </div>
 <p class="question"> 18.Write a program to accept elements in the form of a tuple
     and display its minimum, maximum, sum and average.
+</p><br>
+
+<mark>Program :</mark><br><br>
+<div class="ans">
+    element=input("Enter Integer elements seprated by commas :")
+    tpl_ele=tuple(map(int,element.split(',')))
+    print("Tuple is :",tpl_ele)
     
     print("Maximum : ",max(tpl_ele))
     print("Minimum : ",min(tpl_ele))
     print("Sum     : ",sum(tpl_ele))
     print("Average : ",sum(tpl_ele)/len(tpl_ele))
-</p><br>
-
-<mark>Program :</mark><br><br>
-<div class="ans">
-
 </div>
 <p class="question"> 19.Create a program to sort tuple with nested tuples.
 </p><br>
